@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Create a Listing — GLOBENET</title>
+  <meta name="description" content="Create a business, professional, restaurant, school, organisation or event profile on GLOBENET.">
+  <meta name="theme-color" content="#0fa99a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.0.0">
+</head>
+<body data-page="sell">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero" style="--hero-image:url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1800&q=84')">
+      <div class="container page-intro">
+        <span class="eyebrow">For businesses and communities</span>
+        <h1>Create your place on the digital map.</h1>
+        <p>Add real details and pictures. Your listing will appear in the correct category, on a public profile and inside a dashboard built only for that listing.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container form-shell">
+        <aside class="surface stepper" aria-label="Listing steps">
+          <div class="step active"><div class="step-num">1</div><div><strong>Identity</strong><div class="muted">Name, owner and type</div></div></div>
+          <div class="step"><div class="step-num">2</div><div><strong>Location</strong><div class="muted">City, contact and address</div></div></div>
+          <div class="step"><div class="step-num">3</div><div><strong>Offers & pictures</strong><div class="muted">Show what people can find</div></div></div>
+          <div class="step"><div class="step-num">4</div><div><strong>Publish</strong><div class="muted">Storefront and dashboard</div></div></div>
+        </aside>
+        <form class="surface form-panel" id="businessForm" novalidate>
+          <span class="eyebrow">Free starter profile</span>
+          <h2 id="listingFormTitle">Create a GLOBENET listing</h2>
+          <p class="muted">Required fields are marked with *. Pictures are compressed before being saved to reduce crashes on Android and lower-memory devices.</p>
+          <div class="form-grid">
+            <div class="field"><label for="businessName">Business, school or organisation name *</label><input id="businessName" name="businessName" required maxlength="90" placeholder="Example: Kasa Style Hub"></div>
+            <div class="field"><label for="ownerName">Owner or contact person</label><input id="ownerName" name="ownerName" maxlength="80" placeholder="Full name"></div>
+            <div class="field"><label for="listingType">Listing type *</label><select id="listingType" name="listingType" required><option>Business</option><option>Skilled professional</option><option>Restaurant / food vendor</option><option>School / training centre</option><option>Church / mosque</option><option>Community organisation</option><option>Event organiser</option></select></div>
+            <div class="field"><label for="category">Category *</label><input id="category" name="category" required maxlength="80" placeholder="Fashion, restaurant, plumbing, school…"></div>
+            <div class="field"><label for="city">City or town *</label><input id="city" name="city" required maxlength="80" placeholder="Cape Coast"></div>
+            <div class="field"><label for="phone">Phone or WhatsApp *</label><input id="phone" name="phone" required inputmode="tel" maxlength="30" placeholder="+233…"></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" maxlength="120" placeholder="business@example.com"></div>
+            <div class="field"><label for="website">Website or social link</label><input id="website" name="website" type="url" maxlength="180" placeholder="https://..."></div>
+            <div class="field full"><label for="address">Address, digital address or landmark *</label><input id="address" name="address" required maxlength="180" placeholder="Near UCC Science Market / digital address"></div>
+            <div class="field full"><label for="description">Full description</label><textarea id="description" name="description" maxlength="1200" placeholder="What do you offer, who do you serve and what makes the listing useful?"></textarea></div>
+            <div class="field"><label for="primaryOffer">Main product, service, programme or activity</label><input id="primaryOffer" name="primaryOffer" maxlength="180" placeholder="Example: Men’s shoes and delivery"></div>
+            <div class="field"><label for="startingPrice">Starting price (GH₵)</label><input id="startingPrice" name="startingPrice" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0"></div>
+            <div class="field"><label for="opening">Opening time</label><input id="opening" name="opening" type="time"></div>
+            <div class="field"><label for="closing">Closing time</label><input id="closing" name="closing" type="time"></div>
+            <div class="field full"><label for="schedule">Schedule, service times or admissions note</label><input id="schedule" name="schedule" maxlength="200" placeholder="Sunday 8:00 AM / Admissions open / Available weekdays"></div>
+            <div class="field full">
+              <label for="businessPhotos">Pictures * (up to 3)</label>
+              <div class="upload-box">
+                <strong>Add clear pictures</strong>
+                <p class="muted">Upload a storefront, product, food, campus, professional work, church, organisation or event image. Maximum 12 MB per image.</p>
+                <input id="businessPhotos" name="photos" type="file" multiple accept="image/*">
+                <div class="photo-preview" id="photoPreview" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cluster form-actions">
+            <button class="btn btn-primary" type="submit">Create listing</button>
+            <button class="btn btn-outline" type="button" data-action="open-ai">Write description with Globe AI</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js?v=3.0.0"></script>
+  <script src="assets/js/app.js?v=3.0.0"></script>
+</body>
+</html>

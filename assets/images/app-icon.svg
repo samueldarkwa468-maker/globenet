@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#071e35"/><stop offset="1" stop-color="#0fa99a"/></linearGradient><linearGradient id="globe" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#17b8a6"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+<rect width="512" height="512" rx="112" fill="url(#bg)"/>
+<circle cx="256" cy="236" r="154" fill="url(#globe)"/>
+<path d="M102 236h308M256 82c56 49 84 100 84 154s-28 105-84 154M256 82c-56 49-84 100-84 154s28 105 84 154M127 159h258M127 313h258" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" opacity=".94"/>
+<circle cx="143" cy="159" r="23" fill="#ffb020"/><circle cx="369" cy="313" r="23" fill="#ffb020"/><path d="M143 159l226 154" stroke="#ffb020" stroke-width="16" stroke-linecap="round"/>
+<text x="256" y="455" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="800" fill="#fff" letter-spacing="4">GLOBENET</text>
+</svg>

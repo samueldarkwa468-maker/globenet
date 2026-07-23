@@ -1,0 +1,24 @@
+{
+  "id": "./",
+  "name": "GLOBENET",
+  "short_name": "GLOBENET",
+  "description": "Discover local businesses, products, food, services, jobs, schools and organisations.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0fa99a",
+  "categories": ["business", "shopping", "social", "productivity"],
+  "icons": [
+    {"src": "assets/images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Marketplace", "short_name": "Shop", "url": "./marketplace.html", "icons": [{"src": "assets/images/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Find jobs", "short_name": "Jobs", "url": "./jobs.html", "icons": [{"src": "assets/images/icon-192.png", "sizes": "192x192"}]},
+    {"name": "Business dashboard", "short_name": "Dashboard", "url": "./dashboard.html", "icons": [{"src": "assets/images/icon-192.png", "sizes": "192x192"}]}
+  ]
+}

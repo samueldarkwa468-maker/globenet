@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Marketplace — GLOBENET</title>
+  <meta name="description" content="Discover products and local businesses across Ghana.">
+  <meta name="theme-color" content="#0fa99a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.0.0">
+</head>
+<body data-page="marketplace">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero" style="--hero-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=84')"><div class="container page-intro"><span class="eyebrow">Local marketplace</span><h1>Shop beyond your immediate location.</h1><p>Discover products from local sellers with pictures, transparent prices, location and direct contact.</p><div class="hero-actions"><a class="btn btn-gold" href="sell.html">Start selling</a></div></div></section>
+    <section class="section"><div class="container"><div class="filter-bar"><input id="pageSearch" placeholder="Search products, sellers or locations"><select id="pageFilter"><option value="">All categories</option><option>Shoes</option><option>Fashion</option><option>Electronics</option><option>Beauty</option><option>Home</option><option>Food items</option></select><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="Cape Coast">Cape Coast</button><button class="chip" data-filter="Accra">Accra</button></div><div class="grid grid-4" id="marketGrid"></div><div class="empty-state" id="emptyState">No products match this search.</div></div></section>
+    <section class="section" style="background:var(--surface-2)"><div class="container"><div class="section-head"><div><span class="eyebrow">New local listings</span><h2>Businesses created on this device</h2><p>New business profiles appear here as soon as their owner submits the listing form.</p></div><a class="btn btn-primary" href="sell.html">Create a listing</a></div><div class="grid grid-3" id="createdBusinessGrid"></div></div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/js/data.js?v=3.0.0"></script><script src="assets/js/app.js?v=3.0.0"></script>
+</body>
+</html>
